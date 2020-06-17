@@ -1,0 +1,119 @@
+*{
+    margin:2px;
+    padding:2px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+ margin:1px;
+ padding:1px;
+      background-color: white;
+      color: white;
+      background-image: url(../img/802177.png);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+}
+   .container{
+       width:95%;
+       max-width:900px;
+       padding:32px 64px;
+       margin:auto;
+
+   }
+   #encabezado{
+     background-image:url(../img/PngItem_2394727.png);
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     display:table;
+     width:100%;
+     height:150px;
+     text-align:center;
+     justify-content: center;
+    }
+
+   .menu-main{
+     display: flex;
+     justify-content: space-between;
+     background:  #90a4ae;
+     border-bottom: 1px solid #b0bec5 ;
+     height:40px;
+     line-height: 40px;
+    }
+    .menu-main a{
+     font-family: arial;
+     color: #ffffff;
+     text-decoration: none;
+     font-size: 12px;
+     font-weight: bold;
+     justify-content: center;
+     align-items: center;
+     display: block;
+     text-align: center;
+    }
+    .menu-main a:hover{
+     background: rgba(0,0,0, .1);
+     display: block;
+    }
+    .menu-main a.active{
+     background-color: #b0bec5;
+    
+    }
+    @media (max-width: 768px) {
+    
+     .menu-main{
+     height: auto;
+     border-bottom: 0px;
+     display: block;
+     }
+    
+     .menu-main a{
+     height: 30px;
+     border-bottom: 1px solid #b0bec5;
+     }
+    }
+   .social {
+     margin:0px;
+     padding:0px;
+       position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+          right: 0; /* Establecemos la barra en la izquierda */
+       top: 300px; /* Bajamos la barra 200px de arriba a abajo */
+       z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+   }
+    
+       .social ul {
+           list-style: none;
+       }
+    
+       .social ul li a {
+           display: inline-block;
+           color:#fff;
+           background: rgb(211, 208, 208);
+           padding: 10px 14px;
+           text-decoration: none;
+           -webkit-transition:all 500ms ease;
+           -o-transition:all 500ms ease;
+           transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+       }
+    
+       .social ul li .fa-facebook-square {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+       .social ul li .fa-twitter-square {background: #00abf0;}
+       .social ul li .fa-instagram {background: #b91980}
+       
+    
+       .social ul li a:hover {
+           background: rgb(17, 17, 17); /* Cambiamos el fondo cuando el usuario pase el mouse */
+           padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+       }
+       .imagen{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        border: 5px red solid;
+        float: left;
+        margin-right: 2%;}
+        .parrafo{
+            color:white;
+            text-align: justify;
+        }
